@@ -17,7 +17,7 @@ more organized. Another major improvement I would try to make is the data struct
 protocols with Python dictionaries, I could split it up even further by separating ranges and single values for port and ip values. I would utilize a 2 Hashmaps: 1 for
 single value ports and another for range ports. The keys would be hash values for the port and the values would be lists of ip values that fall
 under the same rule as the port values. The main challenge would be coming up with a clever way of storing hash values for port ranges and 
-how we would compare the port to check hash value with the Hashmap keys. This definitely increases the speed because instead of looping through
+how we would compare the port-to-check hash value with the Hashmap keys. This definitely increases the speed because instead of looping through
 all the rules of a specific direction and protocol, we can get the hash value of the port we're trying to search for and simply check if it exists.
 
 # Additional Info
