@@ -1,12 +1,12 @@
 # IllumioChallenge
 
 # How I tested the solution: 
-I first did the tests that were provided in the instructions. After, I focused on edge cases such as the values that are at the port or ip ranges or false cases. Lastly, I tested the amount of my my code took by using the Python time feature and hardcoding 500,000 test rules into my rules.csv file. These tests were done using the main executable script (main.py) that I used and I hardcoded some rules in the rules.csv file.
+I first did the tests that were provided in the instructions. After, I focused on edge cases such as the values that are at the port or ip ranges or false cases. Lastly, I tested the amount of time my code took by using the Python time feature and hardcoding 500,000 test rules into my rules.csv file. These tests were done using the main executable script (main.py) that I used and I hardcoded some rules in the rules.csv file.
 
 # Design
 The main structure that I used to store the rules was a dictionary within a dictionary. I decided to split the direction of the packet as 2 separate keys. Within each key, I had another dictionary where I separated 
 the protocols. Although this takes up space to store, this would help with time because the program would not have to search through the entire list of rules, just the ones
-with the specified direction and protocol. The reason I decided to use direction and protocol as my keys is because they were single
+with the input direction and protocol. The reason I decided to use direction and protocol as my keys is because they were single
 strings as opposed to ports and ip's which had both single values and ranges. I also wanted to point out that I split everything up into
 classes because it was easier to implement and in the case that another programmer wanted to expand on this project, it would be easier
 for them to understand the code.
