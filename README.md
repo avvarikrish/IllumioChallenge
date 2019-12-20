@@ -23,5 +23,5 @@ all the rules of a specific direction and protocol, we can get the hash value of
 # Additional Info
 I definitely enjoyed this project and I wanted to thank the Illumio team for taking the time to read through my application and coding challenge.
 
-# Teams
-Platform (I believe I was given the challenge directly from this team)
+# Teams Ranking
+Platform (I believe I was given the challenge directly from this team), Policy, Data
